@@ -464,7 +464,8 @@ The FACTORIAL of the 5th number is: ${fc}`)
                                                         myTacoCatForm.addEventListener('submit', function (e) {
                                                             e.preventDefault();
 
-                                                            var userInput = wordInput.value;
+                                                            var userInput = wordInput.value.toLowerCase().replace(/\s|\'|\"/g, '')
+;
 
                                                             answer.innerHTML = isPalindrome(userInput);
 
@@ -903,7 +904,7 @@ The FACTORIAL of the 5th number is: ${fc}`)
                 </div>
             </div>
         </div>
-        </div>
+        <!--</div>-->
 
 
         <!-- End Challenges Section -->
