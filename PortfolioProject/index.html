@@ -32,6 +32,9 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+
+    <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="Content/SyntaxHighlighter/shCoreMidnight.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -294,19 +297,19 @@
                                                                         </div>
                                                                         <div class="=col-md-6">
                                                                             <div class="row">
-                                                                                <input id="num1" type="text" />
+                                                                                <input class="clearMe" id="num1" type="text" />
                                                                             </div>
                                                                             <div class="row">
-                                                                                <input id="num2" type="text" />
+                                                                                <input class="clearMe" id="num2" type="text" />
                                                                             </div>
                                                                             <div class="row">
-                                                                                <input id="num3" type="text" />
+                                                                                <input class="clearMe" id="num3" type="text" />
                                                                             </div>
                                                                             <div class="row">
-                                                                                <input id="num4" type="text" />
+                                                                                <input class="clearMe" id="num4" type="text" />
                                                                             </div>
                                                                             <div class="row">
-                                                                                <input id="num5" type="text" />
+                                                                                <input class="clearMe" id="num5" type="text" />
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -324,34 +327,75 @@
                                                                         </div>
                                                                         <div class="col-md-4"></div>
                                                                     </div>
-                                                                    <div class="row">
-                                                                        <button class="btn btn-primary" id="btnCalc">Calculate</button>
-                                                                    </div>
+
                                                                     <div class="row">
                                                                         <p id="outputNumbers"></p>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div id="PreNumbers">
+                                                                                <pre class="brush: js">
+var num1 = Number($("#num1").val());
+var num2 = Number($("#num2").val());
+var num3 = Number($("#num3").val());
+var num4 = Number($("#num4").val());
+var num5 = Number($("#num5").val());
+
+var least = Math.min(num1, num2, num3, num4, num5);
+var greatest = Math.max(num1, num2, num3, num4, num5);
+var sum = num1 + num2 + num3 + num4 + num5;
+var mean = (sum / 5);
+var product = num1 * num2 * num3 * num4 * num5;
+
+var fc = getFactorial(num5);
+
+function getFactorial() {
+    var i;
+    var fact = 1;
+    for (i = num5; i >= 1; i--) {
+        fact = fact * i;
+    }
+    return fact;
+};
+
+                                    </pre>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
+                                                    <button type="button" class="btn btn-default btn-success" id="btnRunNumbers">Run Program</button>
+                                                    <button type="button" class="btn btn-default btn-danger" id="btnClearNumbers">Clear Form</button>
+                                                    <button type="button" class="btn btn-default btn-dark" id="btnShowNumbersCode">Hide Code</button>
+                                                    <button type="button" class="btn btn-default btn-warning" id="btnCloseNumbers" data-dismiss="modal">Close Modal</button>
 
                                                     <script src="Scripts/jquery-3.4.1.js"></script>
                                                     <script src="Scripts/bootstrap.js"></script>
+                                                    <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
+                                                    <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
                                                     <script>
-                                                        $("#btnCalc").on("click", function () {
+                                                        SyntaxHighlighter.all();
+                                                    </script>
+                                                    <script>
+                                                        $("#PreNumbers").hide();
+                                                        $("#btnRunNumbers").on("click", function () {
                                                             var num1 = Number($("#num1").val());
                                                             var num2 = Number($("#num2").val());
                                                             var num3 = Number($("#num3").val());
                                                             var num4 = Number($("#num4").val());
                                                             var num5 = Number($("#num5").val());
-                                                            console.log(`num5 type is: ${typeof num5}`);
 
                                                             var least = Math.min(num1, num2, num3, num4, num5);
                                                             var greatest = Math.max(num1, num2, num3, num4, num5);
                                                             var sum = num1 + num2 + num3 + num4 + num5;
                                                             var mean = (sum / 5);
                                                             var product = num1 * num2 * num3 * num4 * num5;
+
+
+                                                        
 
                                                             var fc = getFactorial(num5);
 
@@ -363,11 +407,6 @@
                                                                 }
                                                                 return fact;
                                                             };
-
-
-
-                                                            console.log(`fc type is: ${typeof fc}`);
-
                                                             $("#outputNumbers").html(`The number of LEAST value is: ${least} <br>
 The number with the GREATEST value is: ${greatest} <br>
 The MEAN of these numbers is: ${mean} <br>
@@ -375,12 +414,17 @@ The SUM of these numbers is: ${sum} <br>
 The PRODUCT of these numbers is: ${product} <br>
 The FACTORIAL of the 5th number is: ${fc}`)
                                                         })
-
+                                                        $("#btnClearNumbers").on("click", function () {
+                                                            $(".clearMe").val("");
+                                                            $("#outputNumbers").html("");
+                                                        })
+                                                        $("#btnShowNumbersCode").on("click", function () {
+                                                            $("#PreNumbers").toggle();
+                                                            let btnText = $(this).text();
+                                                            $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
+                                                        });
                                                     </script>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    </div>
+                                                    <div class="modal-footer"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -454,16 +498,16 @@ The FACTORIAL of the 5th number is: ${fc}`)
                                             </div>
 
                                             <!--<div class="row">
-                                <div class="col-md-5">
-                                </div>
+                                                <div class="col-md-5">
+                                                </div>
 
-                                <div class="col-md-2">
+                                                <div class="col-md-2">
 
-                                </div>
+                                                </div>
 
-                                <div class="col-md-5">
-                                </div>
-                            </div>-->
+                                                <div class="col-md-5">
+                                                </div>
+                                            </div>-->
 
                                             <div class="row">
                                                 <p>PROGRAM OUTPUT<br /> will be displayed here: <br /></p>
@@ -954,10 +998,7 @@ The FACTORIAL of the 5th number is: ${fc}`)
 
 
 
-        </div>
-        </div>
-        </div>
-        </div>
+
         <!--</div>-->
         <!-- End Challenges Section -->
         <!-- ======= Journal Section ======= -->
