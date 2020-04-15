@@ -45,15 +45,15 @@ function DoFizzBuzz(f, b, ln) {
     let i = 1;
     while (i <= ln) {
         if (i % fb == 0) {
-            FizzBuzzResult.push("FIZZBUZZ");
+            FizzBuzzResult.push("<span class='fizzbuzz'>FIZZ-BUZZ</span>");
         }
         else
             if (i % b == 0) {
-                FizzBuzzResult.push("BUZZ");
+                FizzBuzzResult.push("<span class='buzz'>BUZZ</span>");
             }
             else
                 if (i % f == 0) {
-                    FizzBuzzResult.push("FIZZ");
+                    FizzBuzzResult.push("<span class='fizz'>FIZZ</span>");
                 }
                 else {
                     FizzBuzzResult.push(i);
