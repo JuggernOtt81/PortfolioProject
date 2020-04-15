@@ -23,7 +23,18 @@ body {
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
+.myChallengesContainer {
+    padding-bottom: 180px;
+}
+.btn-wide {
+    width: 100%;
+}
+.ChallengeImage{
+    width: 300px;
+    height: auto;
 
+
+}
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
