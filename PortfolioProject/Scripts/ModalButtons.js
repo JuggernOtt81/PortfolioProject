@@ -5,7 +5,6 @@ $("#PreHills").hide();
 $("#PreTC").hide();
 $("#PreDummy").hide();
 
-
 $("#btnShowFBCode").on("click", function () {
     $("#PreFB").toggle();
     let btnText = $(this).text();
