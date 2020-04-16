@@ -22,22 +22,18 @@
         .fizz {
             color: blue;
         }
-
         .buzz {
             color: green;
         }
-
         .fizzbuzz {
             color: purple;
             font-size: xx-large;
         }
-
         .btn-wide {
             width: 100%;
         }
     </style>
 </head>
-
 <body>
     <div class="row">
         <div class="col text-center h3" id="headline">Coder Foundry's JS Exercises: FizzBuzz - by Juggernott81</div>
@@ -96,13 +92,6 @@
         </div>
 
     </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <button class="btn btn-primary" id="btnFizzBuzz").on("click", function()>RUN FB</button>
-            </div>
-        </div>
-    </div>-->
     <div class="row">
         <div class="col">
             <div id="PreFB">
@@ -124,150 +113,6 @@
     <div class="row">
         <button type="button" class="btn btn-wide btn-success" id="btnRunFB">Run Program</button>
     </div>
-
-    <!--<div class="col-md-4">
-            <a class="popup-img" href="assets/img/portfolio/4.jpg">
-                <img class="ChallengeImage rounded-circle" src="assets/img/portfolio/4.jpg" alt="img">
-            </a>
-            <div class="container" id="fbContainment">
-                <h2>FIZZBUZZ</h2>
-                 Trigger the modal with a button
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#FizzBuzzModal">Open Modal</button>
-
-                 Modal
-                <div class="modal fade" id="FizzBuzzModal" role="dialog">
-                    <div class="modal-dialog modal-lg">
-
-                         Modal content
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">FizzBuzz Modal</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col text-center h3" id="headline">Coder Foundry's JS Exercises: FizzBuzz - by Juggernott81</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                This is my FizzBuzz exercise using JavaScript.<hr /><br />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <label id="label_fizz">enter FIZZ number</label><br />
-                                            </div>
-                                            <div class="row">
-                                                <label id="label_buzz">enter BUZZ number</label><br />
-                                            </div>
-                                            <div class="row">
-                                                <label id="label_limit">enter LIMIT number</label><br />
-                                            </div>
-                                        </div>
-
-
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <input id="fizz_num" type="text" />
-                                            </div>
-                                            <div class="row">
-                                                <input id="buzz_num" type="text" />
-                                            </div>
-                                            <div class="row">
-                                                <input id="limit_num" type="text" />
-                                            </div>
-                                            <hr /><br />
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-
-                                        <div class="row">
-                                            <div class="col-md-4"></div>
-                                            <div class="col-md-4">
-                                                <div class="row">
-                                                    <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                         width="100" height="100" class="rounded-circle" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <button class="btn btn-primary" id="$(" #btnFizzBuzz").on("click", function()>RUN FB</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div id="PreFB">
-                                            <pre class="brush: js">
-    CODE GOES HERE!
-
-    </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <p>PROGRAM OUTPUT<br /> will be displayed here: <br /></p>
-                                            <p id="outputFB"></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <script>
-                                    $("#PreFB").hide();
-                                    var text = "";
-
-                                    $("#btnClearFB").on("click", function () {
-                                        $(".clearMe").val("");
-                                        $("#outputNumbers").html("");
-                                    })
-                                    $("#btnShowFBCode").on("click", function () {
-                                        $("#PreFB").toggle();
-                                        let btnText = $(this).text();
-                                        $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
-                                    });
-                                </script>
-                            </div>
-                            <div class="row" id="buttonsFB">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <button type="button" class="btn btn-wide btn-success" id="btnRunFB">Run Program</button>
-                                    </div>
-                                    <div class="row">
-                                        <button type="button" class="btn btn-wide btn-danger" id="btnClearFB">Clear Form</button>
-                                    </div>
-                                    <div class="row">
-                                        <button type="button" class="btn btn-wide btn-dark" id="btnShowFBCode">Show Code</button>
-                                    </div>
-                                    <div class="row">
-                                        <button type="button" class="btn btn-wide btn-warning" id="btnCloseFB" data-dismiss="modal">Close Modal</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
