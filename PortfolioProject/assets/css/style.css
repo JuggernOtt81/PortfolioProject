@@ -52,9 +52,15 @@ body {
     opacity: 0.92;
 }
 .challengesPaddsection{
-    margin-bottom: 180px;
+    /*margin-bottom: 180px;*/
 }
-
+.touchMe {
+    color: darkblue;
+    font-family: 'Ink Free';
+    /*font-variant:small-caps;*/
+    font-size: xx-large;
+    text-shadow: 1px 1px 3px blue;
+}
 
 .ProgrammingIcons {
     margin: 10px;
@@ -469,7 +475,11 @@ nav ul li {
     position: relative;
     padding-bottom: 50px;
 }
-
+#challenges .portfolio-container {
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 100%;
+}
     #challenges .challenges-list {
         margin-bottom: 50px;
     }

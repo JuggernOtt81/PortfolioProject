@@ -85,18 +85,22 @@
                 <ul class="nav-menu list-unstyled">
                     <li><a href="#header" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#myTools" class="smoothScroll">Tools</a></li>
                     <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="#challenges" class="smoothScroll">Coding Challenges</a></li>
+                    <li><a href="#challenges" class="smoothScroll">Challenges</a></li>
                     <li><a href="#journal" class="smoothScroll">Blog</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
     <!-- End Navbar -->
+    <div id="header">
+
+    </div>
+
     <!-- ======= Hero Section ======= -->
-    <div id="hero" class="home">
+    <div id="hero" class="home"> <!--style="background-color:cornflowerblue"-->
 
         <div class="container">
             <div class="hero-content">
@@ -108,7 +112,7 @@
                     </h1>
                     
                     <p class="typed-items" data-typed-person="" id="hideP">
-                        LAWSON OTT, a Developer, a Problem Solver, Unstoppable, a Juggernaut, JuggernOtt81
+                        LAWSON OTT... , a Developer... , a Problem Solver... , Unstoppable... , a Juggernaut... , JuggernOtt81...
                     </p>
 
                     <div class="row" list-social-custom>
@@ -126,7 +130,7 @@
 
 
         <!-- ======= About Section ======= -->
-        <div id="about" class="paddsection">
+        <div id="about" class="paddsection" >
             <div class="container">
                 <div class="row justify-content-between">
 
@@ -157,8 +161,8 @@
             </div>
         </div>
         <!-- End About Section -->
-        <!-- ======= Services Section ======= -->
-        <div class="text-center paddsection">
+        <!-- ======= Tools Section ======= -->
+        <div class="text-center paddsection" id="myTools" style="background-color: cornflowerblue">
             <div class="container">
                 <div class="section-title text-center">
                     <h2>My Tools</h2>
@@ -220,9 +224,9 @@
         </div>
 
 
-        <!-- End Services Section -->
+        <!-- End Tools Section -->
         <!-- ======= Portfolio Section ======= -->
-        <div id="portfolio" class="text-center paddsection">
+        <div id="portfolio" class="text-center paddsection" style="background-color:deepskyblue">
 
             <div class="container">
                 <div class="section-title text-center">
@@ -288,7 +292,7 @@
         </div>
         <!-- End Portfolio Section -->
         <!-- ======= Challenges Section ======= -->
-        <div id="challenges" class="text-center challengesPaddsection">
+        <div id="challenges" class="text-center challengesPaddsection" style="background-color:khaki">
 
             <div class="myChallengesContainer">
                 <div class="section-title text-center">
@@ -905,6 +909,21 @@ function isPalindrome(userInput) {
                                                                         <div class="row">
                                                                             <div class="col-12">
                                                                                 <div class="row">
+                                                                                    <div class="col-md-4"> </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="row">
+                                                                                            <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                                                 width="100" height="100" class="rounded-circle" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4"> </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                
+                                                                                <div class="row">
                                                                                     <div class="col">
                                                                                         <div class="row">
                                                                                             <label> enter first number</label> <br />
@@ -941,21 +960,6 @@ function isPalindrome(userInput) {
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4"> </div>
-                                                                                    <div class="col-md-4">
-                                                                                        <div class="row">
-                                                                                            <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                                 width="100" height="100" class="rounded-circle" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-4"> </div>
-                                                                                </div>
-
                                                                                 <div class="row">
                                                                                     <div class="row">
                                                                                         <div class="col-md-12">
@@ -1043,37 +1047,6 @@ function isPalindrome(userInput) {
                                                                                 <div id="PreDummy">
                                                                                     <pre class="brush: js">
 $("#DummyOutput").html(`There's NOTHING here! <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 This modal is just a Dummy!`)
 </pre>
                                                                                 </div>
@@ -1083,9 +1056,9 @@ This modal is just a Dummy!`)
                                                                                     <div class="row">
                                                                                         <button type="button" class="btn btn-wide btn-success" id="btnRunDummy">Run Program</button>
                                                                                     </div>
-                                                                                    <div class="row">
+                                                                                    <!--<div class="row">
                                                                                         <button type="button" class="btn btn-wide btn-danger" id="btnClearDummy">Clear Form</button>
-                                                                                    </div>
+                                                                                    </div>-->
                                                                                     <div class="row">
                                                                                         <button type="button" class="btn btn-wide btn-dark" id="btnShowDummyCode">Show Code</button>
                                                                                     </div>
@@ -1117,15 +1090,18 @@ This modal is just a Dummy!`)
         </div>
         <!-- End Challenges Section -->
         <!-- ======= Journal Section ======= -->
-        <div id="journal" class="text-left paddsection">
+        <div id="journal" class="text-left paddsection" style="background-color:moccasin">
 
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>journal</h2>
+                    <h2>
+                        NO BLOG YET!<br />
+                        STAY TUNED!
+                    </h2>
                 </div>
             </div>
 
-            <div class="container">
+            <!--<div class="container">
                 <div class="journal-block">
                     <div class="row">
 
@@ -1182,30 +1158,31 @@ This modal is just a Dummy!`)
 
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
-        <!-- End Journal Section -->
+        
+    <!-- End Journal Section -->
         <!-- ======= Contact Section ======= -->
-        <div id="contact" class="paddsection">
+        <div id="contact" class="paddsection" style="background-color:springgreen">
             <div class="container">
-                <div class="contact-block1">
+                <!--<div class="contact-block1">-->
                     <div class="row">
 
                         <div class="col-lg-6">
                             <div class="contact-contact">
 
-                                <h2 class="mb-30">GET IN TOUCH</h2>
+                                <h2 class="mb-30">GET IN TOUCH:</h2>
 
                                 <ul class="contact-details">
-                                    <li><span>Oxford, Ohio</span></li>
-                                    <li><span>juggernott81@gmail.com</span></li>
+                                    <li><span class="touchMe">juggernott81@gmail.com</span></li>
+                                    <li><span class="touchMe">Oxford, Ohio</span></li>
                                 </ul>
 
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <!--<div class="col-lg-6">
                             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                 <div class="row">
 
@@ -1249,9 +1226,10 @@ This modal is just a Dummy!`)
 
                                 </div>
                             </form>
-                        </div>
+                        </div>-->
+
                     </div>
-                </div>
+                <!--</div>-->
             </div>
         </div>
         <!-- End Contact Section -->
@@ -1260,7 +1238,7 @@ This modal is just a Dummy!`)
     </main>
     <!-- End #main -->
     <!-- ======= Footer ======= -->
-    <div id="footer" class="text-center">
+    <div id="footer" class="text-center" style="background-color:wheat">
         <div class="container">
             <div class="socials-media text-center">
 
