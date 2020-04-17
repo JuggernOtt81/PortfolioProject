@@ -76,6 +76,7 @@ $(document).ready(function() {
   // ========================================================================= //
   //  Typed Js
   // ========================================================================= //
+    $("#hideP").hide();
 
   var typed = $(".typed");
 
@@ -86,7 +87,7 @@ $(document).ready(function() {
 
     typed.typed({
       strings: strings,
-      typeSpeed: 100,
+      typeSpeed: 200,
       loop: true,
     });
   });

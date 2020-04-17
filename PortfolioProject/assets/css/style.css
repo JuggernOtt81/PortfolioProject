@@ -23,10 +23,40 @@ body {
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
+.list-social-custom{
+    font-size:xx-large;
+}
+.typed {
+    font-family: Courier New, Courier, monospace;
+}
 .myChallengesContainer {
     padding-bottom: 180px;
 }
+.myTools {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutMeParagraph {
+    color: darkred;
+    font-family: 'Ink Free';
+    /*font-variant:small-caps;*/
+    font-size: x-large;
+    text-indent: 2em;
+    text-shadow: 1px 1px 3px red;
+}
+#namePlate {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: dimgray;
+}
 
+
+.ProgrammingIcons {
+    margin: 10px;
+    height: 125px;
+    width: auto;
+}
 .btn-wide {
     width: 100%;
 }
