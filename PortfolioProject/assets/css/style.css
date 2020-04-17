@@ -49,6 +49,10 @@ body {
     justify-content: space-between;
     padding: 50px;
     background-color: dimgray;
+    opacity: 0.92;
+}
+.challengesPaddsection{
+    margin-bottom: 180px;
 }
 
 
