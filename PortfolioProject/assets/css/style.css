@@ -37,12 +37,12 @@ body {
     justify-content: space-between;
 }
 .aboutMeParagraph {
-    color: darkred;
+    color: #1b1b21ff;
     font-family: 'Lora', serif;
     /*font-variant:small-caps;*/
     font-size: x-large;
     text-indent: 2em;
-    text-shadow: 1px 1px 3px red;
+    /*text-shadow: 1px 1px 3px red;*/
 }
 #namePlate {
     display: flex;
@@ -55,11 +55,11 @@ body {
     /*margin-bottom: 180px;*/
 }
 .touchMe {
-    color: darkblue;
+    color: #dbdbccff;
     font-family: 'Ink Free';
     /*font-variant:small-caps;*/
     font-size: xx-large;
-    text-shadow: 1px 1px 3px blue;
+    /*text-shadow: 1px 1px 3px #b6b6b2ff;*/
 }
 
 .ProgrammingIcons {
