@@ -38,7 +38,7 @@ body {
 }
 .aboutMeParagraph {
     color: darkred;
-    font-family: 'Ink Free';
+    font-family: 'Lora', serif;
     /*font-variant:small-caps;*/
     font-size: x-large;
     text-indent: 2em;

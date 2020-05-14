@@ -46,6 +46,7 @@
     <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
     <link href="Content/SyntaxHighlighter/shCoreMidnight.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <style>
         .fizz {
@@ -61,8 +62,75 @@
             font-size: xx-large;
         }
 
-        .btn-wide {
+        .modal-button {
             width: 100%;
+        }
+
+        .clear-bg {
+            background-color: rgba(0,0,0,0);
+        }
+
+        #ChallengesRow_1 {
+            margin-bottom: 75px;
+        }
+
+        #ChallengesRow_2 {
+            margin-bottom: 75px;
+        }
+
+        .modalTile {
+        }
+
+        .box {
+            position: relative;
+            display: inline-block; /* Make the width of box same as image */
+        }
+
+            .box .text {
+                /*position: relative;*/
+                z-index: 999;
+                /*margin: 0 auto;*/
+                /*left: 0;*/
+                /*right: 0;*/
+                /*top: 40%;*/ /* Adjust this value to move the positioned div up and down */
+                text-align: center;
+                /*width: 90%;*/ /* Set the width of the positioned div */
+                color: black;
+            }
+
+        .modal-box {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .col-sm-4 {
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        .modal-button {
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            width: 250px;
+            height: auto;
+            background-color: blue;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .modal-button-set {
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            height: auto;
+            /*top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);*/
         }
     </style>
 </head>
@@ -130,7 +198,7 @@
 
 
         <!-- ======= About Section ======= -->
-        <div id="about" class="paddsection" >
+        <div id="about" class="paddsection">
             <div class="container">
                 <div class="row justify-content-between">
 
@@ -239,50 +307,56 @@
                     <div class="col-md-12">
                         <div class="portfolio-container">
                             <!--<div class="row">
-                                <div class="col-md-12">-->
-                                    <div class="row">
+                            <div class="col-md-12">-->
+                            <div class="row">
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                                            <a class="popup-img" href="assets/img/portfolio/old 1.jpg">
-                                                <img src="assets/img/portfolio/old 1.jpg" alt="img">
-                                            </a>
-                                        </div>
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 1.jpg">
+                                    <img src="assets/img/portfolio/old 1.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 1.jpg" alt="img">
+                                </div>
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-                                            <a class="popup-img" href="assets/img/portfolio/old 2.jpg">
-                                                <img src="assets/img/portfolio/old 2.jpg" alt="img">
-                                            </a>
-                                        </div>
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 2.jpg">
+                                    <img src="assets/img/portfolio/old 2.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 2.jpg" alt="img">
+                                </div>
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-                                            <a class="popup-img" href="assets/img/portfolio/old 3.jpg">
-                                                <img src="assets/img/portfolio/old 3.jpg" alt="img">
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 3.jpg">
+                                    <img src="assets/img/portfolio/old 3.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 3.jpg" alt="img">
+                                </div>
+                            </div>
 
-                                    <div class="row">
+                            <div class="row">
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-                                            <a class="popup-img" href="assets/img/portfolio/old 4.jpg">
-                                                <img src="assets/img/portfolio/old 4.jpg" alt="img">
-                                            </a>
-                                        </div>
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 4.jpg">
+                                    <img src="assets/img/portfolio/old 4.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 4.jpg" alt="img">
+                                </div>
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-                                            <a class="popup-img" href="assets/img/portfolio/old 5.jpg">
-                                                <img src="assets/img/portfolio/old 5.jpg" alt="img">
-                                            </a>
-                                        </div>
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 5.jpg">
+                                    <img src="assets/img/portfolio/old 5.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 5.jpg" alt="img">
+                                </div>
 
-                                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-                                            <a class="popup-img" href="assets/img/portfolio/old 6.jpg">
-                                                <img src="assets/img/portfolio/old 6.jpg" alt="img">
-                                            </a>
-                                        </div>
-                                    </div>
-                                <!--</div>
-                            </div>-->
+                                <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+                                    <!--<a class="popup-img" href="assets/img/portfolio/old 6.jpg">
+                                    <img src="assets/img/portfolio/old 6.jpg" alt="img">
+                                </a>-->
+                                    <img src="assets/img/portfolio/old 6.jpg" alt="img">
+                                </div>
+                            </div>
+                            <!--</div>
+                        </div>-->
 
                         </div>
                     </div>
@@ -304,85 +378,79 @@
                         <div class="col-md-12">
                             <div class="portfolio-container">
 
-                                <section id="ChallengesRow_1">
-                                    <div class="row">
+                                <div id="ChallengesRow_1" class="row">
+                                    <section id="Numbers" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#NumbersModal">
+                                            <label class="box text">Numbers</label>
+                                            <img src="assets/img/portfolio/1.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#NumbersModal">
+                                        </a>
 
-                                        <section id="Numbers">
-                                            <div class="col-md-4 modalTile">
-                                                <div class="container" id="NumbersContainment">
-
-
-                                                    <button type="button" data-toggle="modal" data-target="#NumbersModal">
-                                                        <h3>Numbers</h3>
-                                                        <img src="assets/img/portfolio/1.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#NumbersModal">
-                                                    </button>
-
-                                                    <div class="modal fade" id="NumbersModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title">Playing With Numbers Modal</h6>
+                                        <div class="modal fade" id="NumbersModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title">Playing With Numbers Modal</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                             width="100" height="100" class="rounded-circle" />
+                                                                        <h6> "JS EXERCISES: Numbers"</h6>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="modal-body">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                         width="100" height="100" class="rounded-circle" />
-                                                                                    <h3> "JS EXERCISES: Numbers"</h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <div class="=col-md-5 offset-1">
-                                                                                        <div class="row">
-                                                                                            <label> enter first number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter second number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter third number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter fourth number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label id="label5"> enter fifth number</label> <br />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="=col-md-5 offset-1">
-                                                                                        <div class="row">
-                                                                                            <input class="clearMe" id="num1" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input class="clearMe" id="num2" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input class="clearMe" id="num3" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input class="clearMe" id="num4" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input class="clearMe" id="num5" type="text" placeholder="to be factorialized" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <div class="=col-md-5 offset-1">
                                                                             <div class="row">
-                                                                                <p id="outputNumbers"> </p>
+                                                                                <label> enter first number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter second number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter third number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter fourth number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label id="label5"> enter fifth number</label> <br />
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col">
-                                                                                <div id="PreNumbers">
-                                                                                    <pre class="brush: js">
+                                                                        <div class="=col-md-5 offset-1">
+                                                                            <div class="row">
+                                                                                <input class="clearMe" id="num1" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input class="clearMe" id="num2" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input class="clearMe" id="num3" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input class="clearMe" id="num4" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input class="clearMe" id="num5" type="text" placeholder="to be factorialized" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="row">
+                                                                    <p id="outputNumbers"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div id="PreNumbers">
+                                                                        <pre class="brush: js">
         var num1 = Number($("#num1").val());
         var num2 = Number($("#num2").val());
         var num3 = Number($("#num3").val());
@@ -415,113 +483,109 @@
         ;
 
         </pre>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="row" id="buttonsNumbers">
-                                                                    <div class="col-md-12">
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-success" id="btnRunNumbers"> Run Program</button>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-danger" id="btnClearNumbers"> Clear Form</button>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-dark" id="btnShowNumbersCode"> Show Code</button>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-warning" id="btnCloseNumbers" data-dismiss="modal"> Close Modal</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row" id="buttonsNumbers">
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4 modal-button-set">
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-success" id="btnRunNumbers"> Run Program</button>
+                                                            </div>
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-danger" id="btnClearNumbers"> Clear Form</button>
+                                                            </div>
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-dark" id="btnShowNumbersCode"> Show Code</button>
+                                                            </div>
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-warning" id="btnCloseNumbers" data-dismiss="modal"> Close Modal</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section id="TacoCat">
-                                            <div class="col-md-4 modalTile">
-                                                <div class="container" id="CatContainment">
+                                        </div>
+                                    </section>
+                                    <section id="TacoCat" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#TacoCatModal" class="box">
+                                            <label class="box text">TacoCat</label>
+                                            <img src="assets/img/portfolio/2.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#TacoCatModal">
+                                        </a>
 
+                                        <div class="modal fade" id="TacoCatModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title"> TacoCat Modal</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
 
-                                                    <button type="button" data-toggle="modal" data-target="#TacoCatModal">
-                                                        <h3> TacoCat</h3>
-                                                        <img src="assets/img/portfolio/2.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#TacoCatModal">
-                                                    </button>
+                                                                    <div class="row">
+                                                                        <div class="col text-center h6" id="headline"> Coder Foundry's JS Exercises: TacoCat - by Juggernott81</div>
+                                                                    </div>
 
-                                                    <div class="modal fade" id="TacoCatModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title"> TacoCat Modal</h6>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        This is my TacoCat exercise using JavaScript.
 
-                                                                                <div class="row">
-                                                                                    <div class="col text-center h3" id="headline"> Coder Foundry's JS Exercises: TacoCat - by Juggernott81</div>
-                                                                                </div>
+                                                                        <div class="container">
+                                                                            <p> Enter some text</p>
+                                                                            <form id="myTacoCatForm">
+                                                                                <input id="wordInput" type="text" />
+                                                                                <button> Submit</button>
+                                                                            </form>
 
-                                                                                <div class="row">
-                                                                                    This is my TacoCat exercise using JavaScript.
+                                                                            <br />
+                                                                        </div>
+                                                                        <hr /> <br />
 
-                                                                                    <div class="container">
-                                                                                        <p> Enter some text</p>
-                                                                                        <form id="myTacoCatForm">
-                                                                                            <input id="wordInput" type="text" />
-                                                                                            <button> Submit</button>
-                                                                                        </form>
+                                                                    </div>
 
-                                                                                        <br />
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-4"> </div>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="row">
+                                                                                        <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                                             width="100" height="100" class="rounded-circle" />
                                                                                     </div>
-                                                                                    <hr /> <br />
-
                                                                                 </div>
-
-                                                                                <div class="row">
-                                                                                    <div class="col-md-12">
-
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-4"> </div>
-                                                                                            <div class="col-md-4">
-                                                                                                <div class="row">
-                                                                                                    <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                                         width="100" height="100" class="rounded-circle" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-4"> </div>
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                </div>
+                                                                                <div class="col-md-4"> </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
 
-                                                                    <div class="row">
-                                                                        <p> PROGRAM OUTPUT<br /> will be displayed here: <br /> </p>
                                                                     </div>
-                                                                    <div class="row">
-                                                                        <div id="answer">
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <p id="answerAppend">
+                                                        <div class="row">
+                                                            <p> PROGRAM OUTPUT<br /> will be displayed here: <br /> </p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div id="answer">
 
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                            <div id="PreTC">
-                                                                                <pre class="brush: js">
+                                                            </div>
+                                                            <div class="row">
+                                                                <p id="answerAppend">
+
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div id="PreTC">
+                                                                    <pre class="brush: js">
 var myTacoCatForm = document.getElementById('myTacoCatForm');
 var wordInput = document.getElementById('wordInput');
 var answer = document.getElementById('answer');
@@ -550,89 +614,83 @@ function isPalindrome(userInput) {
     return true;
 }
         </pre>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row" id="buttonsTC">
-                                                                    <div class="col-md-12">
-                                                                        <!--<div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-success" id="btnRunTC_DEAD">Xx [Use the Submit button above] xX</button>
-                                                                        </div>-->
-                                                                        <!--<div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-danger" id="btnClearTC"> Clear Form</button>
-                                                                        </div>-->
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-dark" id="btnShowTCCode"> Show Code</button>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-warning" id="btnCloseTC" data-dismiss="modal"> Close Modal</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    <div class="row" id="buttonsTC">
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4 modal-button-set">
+                                                            <!--<div class="row">
+                                                            <button type="button" class="btn modal-button btn-success" id="btnRunTC_DEAD">Xx [Use the Submit button above] xX</button>
+                                                        </div>-->
+                                                            <!--<div class="row">
+                                                            <button type="button" class="btn modal-button btn-danger" id="btnClearTC"> Clear Form</button>
+                                                        </div>-->
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-dark" id="btnShowTCCode"> Show Code</button>
+                                                            </div>
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-warning" id="btnCloseTC" data-dismiss="modal"> Close Modal</button>
+                                                            </div>
+                                                            <div class="col-md-4"></div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section id="Hills">
-                                            <div class="col-md-4 modalTile">
+                                        </div>
+                                    </section>
+                                    <section id="Hills" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#HillsModal" class="box">
+                                            <label class="box text">Sunset Hills</label>
+                                            <img src="assets/img/portfolio/3.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#HillsModal">
+                                        </a>
 
-                                                <div class="container" id="HillContainment">
+                                        <div class="modal fade" id="HillsModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
 
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title"> Sunset Hills</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col text-center h6" id="headline"> Coder Foundry's JS Exercises: Sunset Hills - by Juggernott81</div>
+                                                            </div>
 
-                                                    <button type="button" data-toggle="modal" data-target="#HillsModal">
-                                                        <h3>Sunset Hills Modal</h3>
-                                                        <img src="assets/img/portfolio/3.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#HillsModal">
-                                                    </button>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
 
-                                                    <div class="modal fade" id="HillsModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
-
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title"> Sunset Hills</h6>
+                                                                    <div class="row">
+                                                                        <div class="col-md-4"> </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="row">
+                                                                                <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                                     width="100" height="100" class="rounded-circle" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4"> </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="modal-body">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row">
-                                                                            <div class="col text-center h3" id="headline"> Coder Foundry's JS Exercises: Sunset Hills - by Juggernott81</div>
-                                                                        </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
+                                                            </div>
 
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4"> </div>
-                                                                                    <div class="col-md-4">
-                                                                                        <div class="row">
-                                                                                            <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                                 width="100" height="100" class="rounded-circle" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-4"> </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <p> PROGRAM OUTPUT<br /> will be displayed here: <br /> </p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <p id="outputSunset"> </p>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col">
-                                                                                    <div id="PreHills">
-                                                                                        <pre class="brush: js">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <p> PROGRAM OUTPUT<br /> will be displayed here: <br /> </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <p id="outputSunset"> </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div id="PreHills">
+                                                                            <pre class="brush: js">
     let HillsResult = new Array()
 
     let buildingsArray = [3, 2, 4, 7, 6, 9];
@@ -663,166 +721,159 @@ function isPalindrome(userInput) {
     return HillsResult!
 
                                                                 </pre>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <!--<script>
-                                                                        $("#PreHills").hide();
-                                                                        let buildingsArray = [3, 2, 4, 7, 6, 9];
-                                                                        let loopArray = [];
-                                                                        let highestYet = 0;
-                                                                        let canSee = 0;
-                                                                        let canNotSee = 0;
-                                                                        let seeingGroup = [];
-                                                                        let arrayLength = buildingsArray.length;
-
-                                                                        for (let i = 0; i < arrayLength; i++) {
-                                                                            loopArray.push(buildingsArray[i]);
-                                                                            if (buildingsArray[i] > highestYet) {
-                                                                                canSee = canSee++;
-                                                                                seeingGroup.push(buildingsArray[i])
-                                                                            }
-
-                                                                            else {
-                                                                                canNotSee = canNotSee++;
-                                                                            }
-
-                                                                            if (loopArray[i] > highestYet) {
-                                                                                highestYet = loopArray[i];
-                                                                            }
-
-                                                                        }
-
-                                                                        $("#SunsetBtn").on("click", function () {
-
-                                                                            $("#outputSunset").append(`There are ${seeingGroup.length} buildings from which the sunset can be seen, and they are the buildings with heights of ${seeingGroup}.`);
-                                                                        });
-                                                                        $("#btnClearHills").on("click", function () {
-                                                                            $(".clearMe").val("");
-                                                                            $("#outputNumbers").html("");
-                                                                        })
-                                                                        $("#btnShowHillsCode").on("click", function () {
-                                                                            $("#PreHills").toggle();
-                                                                            let btnText = $(this).text();
-                                                                            $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
-                                                                        });
-                                                                    </script>-->
-
-                                                                </div>
-                                                                <div class="row" id="buttonsHills">
-                                                                    <div class="col-md-12">
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-success" id="btnRunNHills"> Run Program</button>
-                                                                        </div>
-                                                                        <!--<div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-danger" id="btnClearHills"> Clear Form</button>
-                                                                        </div>-->
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-dark" id="btnShowHillsCode"> Show Code</button>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <button type="button" class="btn btn-wide btn-warning" id="btnCloseHills" data-dismiss="modal"> Close Modal</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="modal-footer">
-                                                                </div>
-
                                                             </div>
                                                         </div>
 
+                                                        <!--<script>
+                                                        $("#PreHills").hide();
+                                                        let buildingsArray = [3, 2, 4, 7, 6, 9];
+                                                        let loopArray = [];
+                                                        let highestYet = 0;
+                                                        let canSee = 0;
+                                                        let canNotSee = 0;
+                                                        let seeingGroup = [];
+                                                        let arrayLength = buildingsArray.length;
+
+                                                        for (let i = 0; i < arrayLength; i++) {
+                                                            loopArray.push(buildingsArray[i]);
+                                                            if (buildingsArray[i] > highestYet) {
+                                                                canSee = canSee++;
+                                                                seeingGroup.push(buildingsArray[i])
+                                                            }
+
+                                                            else {
+                                                                canNotSee = canNotSee++;
+                                                            }
+
+                                                            if (loopArray[i] > highestYet) {
+                                                                highestYet = loopArray[i];
+                                                            }
+
+                                                        }
+
+                                                        $("#SunsetBtn").on("click", function () {
+
+                                                            $("#outputSunset").append(`There are ${seeingGroup.length} buildings from which the sunset can be seen, and they are the buildings with heights of ${seeingGroup}.`);
+                                                        });
+                                                        $("#btnClearHills").on("click", function () {
+                                                            $(".clearMe").val("");
+                                                            $("#outputNumbers").html("");
+                                                        })
+                                                        $("#btnShowHillsCode").on("click", function () {
+                                                            $("#PreHills").toggle();
+                                                            let btnText = $(this).text();
+                                                            $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
+                                                        });
+                                                    </script>-->
+
                                                     </div>
+                                                    <div class="row" id="buttonsHills">
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4 modal-button-set">
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-success" id="btnRunNHills"> Run Program</button>
+                                                            </div>
+                                                            <!--<div class="row">
+                                                            <button type="button" class="btn modal-button btn-danger" id="btnClearHills"> Clear Form</button>
+                                                        </div>-->
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-dark" id="btnShowHillsCode"> Show Code</button>
+                                                            </div>
+                                                            <div class="row">
+                                                                <button type="button" class="btn modal-button btn-warning" id="btnCloseHills" data-dismiss="modal"> Close Modal</button>
+                                                            </div>
+                                                            <div class="col-md-4"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                        </section>
+                                        </div>
+                                    </section>
+                                </div>
 
-                                    </div>
-                                </section>
+                                <br />
+                                <div id="ChallengesRow_2" class="row">
+                                    <section id="FizzBuzz" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#FizzBuzzModal" class="box">
+                                            <label class="box text">FIZZBUZZ</label>
+                                            <img src="assets/img/portfolio/4.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#FizzBuzzModal">
+                                        </a>
 
-                                <section id="ChallengesRow_2">
-                                    <div class="row">
+                                        <div class="modal fade" id="FizzBuzzModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title"> FizzBuzz Modal</h6>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col text-center h6" id="headline">Coder Foundry's JS Exercises: FizzBuzz - by Juggernott81</div>
+                                                            </div>
 
-                                        <section id="FizzBuzz">
-
-                                            <div class="col-md-4 modalTile">
-                                                <div class="container" id="fbContainment">
-
-                                                    <button type="button" data-toggle="modal" data-target="#FizzBuzzModal">
-                                                        <h3>FIZZBUZZ</h3>
-                                                        <img src="assets/img/portfolio/4.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#FizzBuzzModal">
-                                                    </button>
-                                                    <div class="modal fade" id="FizzBuzzModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title"> FizzBuzz Modal</h6>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        This is my FizzBuzz exercise using JavaScript.<hr /><br />
+                                                                    </div>
                                                                 </div>
-                                                                <div class="modal-body">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row">
-                                                                            <div class="col text-center h3" id="headline">Coder Foundry's JS Exercises: FizzBuzz - by Juggernott81</div>
-                                                                        </div>
+                                                            </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    This is my FizzBuzz exercise using JavaScript.<hr /><br />
-                                                                                </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <label id="label_fizz">enter FIZZ number</label><br />
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <label id="label_buzz">enter BUZZ number</label><br />
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <label id="label_limit">enter LIMIT number</label><br />
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <input id="fizz_num" type="text" />
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <input id="buzz_num" type="text" />
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <input id="limit_num" type="text" />
+                                                                    </div>
+                                                                    <hr /><br />
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-4"></div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="row">
+                                                                                <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                                     width="100" height="100" class="rounded-circle" />
                                                                             </div>
                                                                         </div>
+                                                                        <div class="col-md-4"></div>
+                                                                    </div>
+                                                                </div>
 
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <div class="row">
-                                                                                    <label id="label_fizz">enter FIZZ number</label><br />
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <label id="label_buzz">enter BUZZ number</label><br />
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <label id="label_limit">enter LIMIT number</label><br />
-                                                                                </div>
-                                                                            </div>
-
-
-                                                                            <div class="col-md-6">
-                                                                                <div class="row">
-                                                                                    <input id="fizz_num" type="text" />
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <input id="buzz_num" type="text" />
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <input id="limit_num" type="text" />
-                                                                                </div>
-                                                                                <hr /><br />
-
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4"></div>
-                                                                                    <div class="col-md-4">
-                                                                                        <div class="row">
-                                                                                            <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                                 width="100" height="100" class="rounded-circle" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-4"></div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col">
-                                                                                <div id="PreFB">
-                                                                                    <pre class="brush: js">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div id="PreFB">
+                                                                        <pre class="brush: js">
                 function DoFizzBuzz(f, b, ln) {
     let FizzBuzzResult = new Array()
 
@@ -851,127 +902,128 @@ function isPalindrome(userInput) {
 }
 
                 </pre>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-12">
-                                                                                <div class="row">
-                                                                                    <p>PROGRAM OUTPUT<br /> will be displayed here: <br /></p>
-                                                                                    <p id="outputFB"></p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-12">
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-success" id="btnRunFB">Run Program</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-danger" id="btnClearFB"> Clear Form</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-dark" id="btnShowFBCode"> Show Code</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-warning" id="btnCloseFB" data-dismiss="modal"> Close Modal</button>
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="modal-footer">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <p>PROGRAM OUTPUT<br /> will be displayed here: <br /></p>
+                                                                        <p id="outputFB"></p>
+                                                                    </div>
                                                                 </div>
+                                                            </div>
+                                                            <div class="row" id="buttonsFizzBuzz">
+                                                                <div class="col-md-4"></div>
+                                                                <div class="col-md-4 modal-button-set">
+                                                                    <div class="row">
+                                                                        <button type="button" class="btn modal-button btn-success" id="btnRunFB">Run Program</button>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <button type="button" class="btn modal-button btn-danger" id="btnClearFB"> Clear Form</button>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <button type="button" class="btn modal-button btn-dark" id="btnShowFBCode"> Show Code</button>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <button type="button" class="btn modal-button btn-warning" id="btnCloseFB" data-dismiss="modal"> Close Modal</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section id="Fears">
-                                            <div class="col-md-4" modalTile>
+                                        </div>
+                                    </section>
+                                    <section id="Fears" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#SumOfAllFearsModal" class="box">
+                                            <label class="box text">Sum of all Fears</label>
+                                            <img src="assets/img/portfolio/5.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#SumOfAllFearsModal">
+                                        </a>
 
-                                                <div class="container" id="FearContainment">
-                                                    <button type="button" data-toggle="modal" data-target="#SumOfAllFearsModal">
-                                                        <h3>Sum of all Fears</h3>
-                                                        <img src="assets/img/portfolio/5.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#SumOfAllFearsModal">
-                                                    </button>
-
-                                                    <div class="modal fade" id="SumOfAllFearsModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
+                                        <div class="modal fade" id="SumOfAllFearsModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
 
 
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title">Sum of all Fears Modal</h6>
-                                                                </div>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title">Sum of all Fears Modal</h6>
+                                                    </div>
 
-                                                                <div class="modal-body">
-                                                                    <div class="container">
-                                                                        <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-4"> </div>
-                                                                                    <div class="col-md-4">
-                                                                                        <div class="row">
-                                                                                            <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
-                                                                                                 width="100" height="100" class="rounded-circle" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-4"> </div>
-                                                                                </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4"> </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="row">
+                                                                                <img src="https://avatars1.githubusercontent.com/u/34386218?s=460&u=68796f61e85f42139190f367c3af1266071775e7&v=4"
+                                                                                     width="100" height="100" class="rounded-circle" />
                                                                             </div>
                                                                         </div>
+                                                                        <div class="col-md-4"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="row">
+                                                                                <label> enter first number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter second number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter third number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label> enter fourth number</label> <br />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label id="labelK"> enter value for "K"</label> <br />
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col">
+                                                                            <div class="row">
+                                                                                <input id="num_1" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input id="num_2" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input id="num_3" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input id="num_4" type="text" />
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <input id="num_K" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
                                                                         <div class="row">
                                                                             <div class="col-md-12">
-                                                                                
-                                                                                <div class="row">
-                                                                                    <div class="col">
-                                                                                        <div class="row">
-                                                                                            <label> enter first number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter second number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter third number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label> enter fourth number</label> <br />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <label id="labelK"> enter value for "K"</label> <br />
-                                                                                        </div>
-                                                                                    </div>
+                                                                                <p> Output Area:</p>
+                                                                                <p id="SoafNumbers"> </p>
+                                                                            </div>
 
-                                                                                    <div class="col">
-                                                                                        <div class="row">
-                                                                                            <input id="num_1" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input id="num_2" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input id="num_3" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input id="num_4" type="text" />
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                            <input id="num_K" type="text" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <div class="row">
-                                                                                        <div class="col-md-12">
-                                                                                            <p> Output Area:</p>
-                                                                                            <p id="SoafNumbers"> </p>
-                                                                                        </div>
-
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <div class="col">
-                                                                                            <div id="PreFears">
-                                                                                                <pre class="brush: js">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <div id="PreFears">
+                                                                                    <pre class="brush: js">
     let FearsResult = new Array()
         let numberArray = [];
         numberArray.push(num_1, num_2, num_3, num_4);
@@ -989,99 +1041,97 @@ function isPalindrome(userInput) {
         }
 
                                                                 </pre>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="row" id="buttonsFears">
-                                                                        <div class="col-md-12">
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-success" id="btnRunFears"> Run Program</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-danger" id="btnClearFears"> Clear Form</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-dark" id="btnShowFearsCode"> Show Code</button>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <button type="button" class="btn btn-wide btn-warning" id="btnCloseFears" data-dismiss="modal"> Close Modal</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="modal-footer">
-                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                        <div class="row" id="buttonsFears">
+                                                            <div class="col-md-4"></div>
+                                                            <div class="col-md-4 modal-button-set">
+                                                                <div class="row">
+                                                                    <button type="button" class="btn modal-button btn-success" id="btnRunFears"> Run Program</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class="btn modal-button btn-danger" id="btnClearFears"> Clear Form</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class="btn modal-button btn-dark" id="btnShowFearsCode"> Show Code</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <button type="button" class="btn modal-button btn-warning" id="btnCloseFears" data-dismiss="modal"> Close Modal</button>
+                                                                </div>
+                                                                <div class="col-md-4"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-footer">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section id="Dummy">
-                                            <div class="col-md-4 modalTile">
-                                                <div class="container" id="DummyContainment">
-                                                    <button type="button" data-toggle="modal" data-target="#DummyModal">
-                                                        <h3>Dummy</h3>
-                                                        <img src="assets/img/portfolio/6.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#DummyModal">
-                                                    </button>
+                                        </div>
+                                    </section>
+                                    <section id="Dummy" class="col-sm-4 box modal-box">
+                                        <a data-toggle="modal" data-target="#DummyModal" class="box">
+                                            <label class="box text">Dummy</label>
+                                            <img src="assets/img/portfolio/6.jpg" alt="img" class="ChallengeImage rounded-circle" data-toggle="modal" data-target="#DummyModal">
+                                        </a>
 
-                                                    <div class="modal fade" id="DummyModal" role="dialog">
-                                                        <div class="modal-dialog modal-lg">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h6 class="modal-title"> Dummy Modal</h6>
+                                        <div class="modal fade" id="DummyModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6 class="modal-title"> Dummy Modal</h6>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p id="DummyOutput">What are you doing in here?<br /></p>
                                                                 </div>
-
-                                                                <div class="modal-body">
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="row">
-                                                                                <p id="DummyOutput">What are you doing in here?<br /></p>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div id="PreDummy">
-                                                                                    <pre class="brush: js">
+                                                                <div class="row">
+                                                                    <div id="PreDummy">
+                                                                        <pre class="brush: js">
 $("#DummyOutput").html(`There's NOTHING here! <br>
+
+
+
 This modal is just a Dummy!`)
 </pre>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row" id="buttonsDummy">
-                                                                                <div class="col-md-12">
-                                                                                    <div class="row">
-                                                                                        <button type="button" class="btn btn-wide btn-success" id="btnRunDummy">Run Program</button>
-                                                                                    </div>
-                                                                                    <!--<div class="row">
-                                                                                        <button type="button" class="btn btn-wide btn-danger" id="btnClearDummy">Clear Form</button>
-                                                                                    </div>-->
-                                                                                    <div class="row">
-                                                                                        <button type="button" class="btn btn-wide btn-dark" id="btnShowDummyCode">Show Code</button>
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <button type="button" class="btn btn-wide btn-warning" id="btnCloseDummy" data-dismiss="modal">Close Modal</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="modal-footer">
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="row" id="buttonsDummy">
+                                                                    <div class="col-md-4"></div>
+                                                                    <div class="col-md-4 modal-button-set">
+                                                                        <div class="row">
+                                                                            <button type="button" class="btn modal-button btn-success" id="btnRunDummy">Run Program</button>
+                                                                        </div>
+                                                                        <!--<div class="row">
+                                                                        <button type="button" class="btn modal-button btn-danger" id="btnClearDummy">Clear Form</button>
+                                                                    </div>-->
+                                                                        <div class="row">
+                                                                            <button type="button" class="btn modal-button btn-dark" id="btnShowDummyCode">Show Code</button>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <button type="button" class="btn modal-button btn-warning" id="btnCloseDummy" data-dismiss="modal">Close Modal</button>
+                                                                        </div>
+                                                                        <div class="col-md-4"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-
-                                    </div>
-                                </section>
-
+                                        </div>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1100,138 +1150,138 @@ This modal is just a Dummy!`)
                     <hr />
                     <br />
                     <a href="https://falconblogsite.azurewebsites.net/" target="_blank"><strong><u>FalconBlog Site</u></strong> by JuggernOtt81<br /><i>(.NET, MVC Blog of Programming career starting from learning how to do this project at Coder Foundry)</i></a>
-                    
+
                 </div>
             </div>
 
             <!--<div class="container">
-                <div class="journal-block">
-                    <div class="row">
+            <div class="journal-block">
+                <div class="row">
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
 
-                                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+                            <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
 
-                                <div class="journal-txt">
+                            <div class="journal-txt">
 
-                                    <h6><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h6>
-                                    <p class="separator">
-                                        To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
+                                <h6><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h6>
+                                <p class="separator">
+                                    To an English person, it will seem like simplified English
+                                </p>
 
                             </div>
+
                         </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
-
-                                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-                                <div class="journal-txt">
-
-                                    <h6><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h6>
-                                    <p class="separator">
-                                        To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
-
-                                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-                                <div class="journal-txt">
-
-                                    <h6><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h6>
-                                    <p class="separator">
-                                        To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+
+                            <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+                            <div class="journal-txt">
+
+                                <h6><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h6>
+                                <p class="separator">
+                                    To an English person, it will seem like simplified English
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+
+                            <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+                            <div class="journal-txt">
+
+                                <h6><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h6>
+                                <p class="separator">
+                                    To an English person, it will seem like simplified English
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-            </div>-->
+            </div>
+        </div>-->
 
         </div>
-        
-    <!-- End Journal Section -->
+
+        <!-- End Journal Section -->
         <!-- ======= Contact Section ======= -->
         <div id="contact" class="paddsection" style="background-color:springgreen">
             <div class="container">
                 <!--<div class="contact-block1">-->
-                    <div class="row">
+                <div class="row">
 
-                        <div class="col-lg-6">
-                            <div class="contact-contact">
+                    <div class="col-lg-6">
+                        <div class="contact-contact">
 
-                                <h2 class="mb-30">GET IN TOUCH:</h2>
+                            <h2 class="mb-30">GET IN TOUCH:</h2>
 
-                                <ul class="contact-details">
-                                    <li><span class="touchMe">juggernott81@gmail.com</span></li>
-                                    <li><span class="touchMe">Oxford, Ohio</span></li>
-                                </ul>
+                            <ul class="contact-details">
+                                <li><span class="touchMe">juggernott81@gmail.com</span></li>
+                                <li><span class="touchMe">Oxford, Ohio</span></li>
+                            </ul>
 
-                            </div>
                         </div>
-
-                        <!--<div class="col-lg-6">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                <div class="row">
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group contact-block1">
-                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                            <div class="validate"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                            <div class="validate"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                            <div class="validate"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                            <div class="validate"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 mb-3">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>-->
-
                     </div>
+
+                    <!--<div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="form-group contact-block1">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>-->
+
+                </div>
                 <!--</div>-->
             </div>
         </div>
