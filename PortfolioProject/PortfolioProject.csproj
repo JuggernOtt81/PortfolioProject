@@ -72,13 +72,6 @@
     <Content Include="assets\css\prism.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\ArcheryMe.png" />
-    <Content Include="assets\img\avatar.jpg" />
-    <Content Include="assets\img\blog-post-1.jpg" />
-    <Content Include="assets\img\blog-post-2.jpg" />
-    <Content Include="assets\img\blog-post-3.jpg" />
-    <Content Include="assets\img\blog-post-big.jpg" />
-    <Content Include="assets\img\favicon.ico" />
-    <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\favicon_io\android-chrome-192x192.png" />
     <Content Include="assets\img\favicon_io\android-chrome-512x512.png" />
     <Content Include="assets\img\favicon_io\apple-touch-icon.png" />
@@ -87,13 +80,8 @@
     <Content Include="assets\img\favicon_io\favicon.ico" />
     <Content Include="assets\img\favicon_io\site.webmanifest" />
     <Content Include="assets\img\home-bg.jpg" />
-    <Content Include="assets\img\JuggernOtt81 logo.jpeg" />
     <Content Include="assets\img\juggslogo.png" />
-    <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\me.jpg" />
-    <Content Include="assets\img\old favicon.png" />
-    <Content Include="assets\img\old home-bg.jpg" />
-    <Content Include="assets\img\old logo.png" />
     <Content Include="assets\img\portfolio\1.jpg" />
     <Content Include="assets\img\portfolio\1.png" />
     <Content Include="assets\img\portfolio\2.jpg" />
