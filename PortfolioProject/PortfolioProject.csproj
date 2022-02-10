@@ -163,8 +163,11 @@
     <Content Include="assets\vendor\venobox\venobox.css" />
     <Content Include="assets\vendor\venobox\venobox.js" />
     <Content Include="assets\vendor\venobox\venobox.min.js" />
+    <Content Include="banking.html" />
     <Content Include="blog-grid.html" />
     <Content Include="blog-single.html" />
+    <Content Include="blog.html" />
+    <Content Include="bugTracker.html" />
     <Content Include="changelog.txt" />
     <Content Include="compare.html" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -361,6 +364,7 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="somethingSpecial.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
